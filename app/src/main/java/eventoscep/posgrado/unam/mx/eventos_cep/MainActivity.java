@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         btnAcercade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Acercade = new Intent(MainActivity.this, AcerdaDe.class);
-                startActivity(Acercade);
+                Intent intent = new Intent(MainActivity.this, AcerdaDe.class);
+                startActivity(intent);
 
             }
         });
