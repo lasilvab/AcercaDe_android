@@ -18,6 +18,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -88,10 +89,10 @@ public class AcercaDe extends FragmentActivity implements OnMapReadyCallback, Vi
         uiSettings.setZoomControlsEnabled(true);
 
         // Add marker in CEP UNAM and move de camera
+        LatLng cep = new LatLng(19.309963, -99.185469);
 
-        //LatLng otra = new LatLng(19.310126, -99.184098);
-        LatLng cep = new LatLng(19.310052, -99.185468);
-        mMap.addMarker(new MarkerOptions().position(cep).title("Unidad de Posgrado UNAM"));
+        // Cambiando el título y el Color del marker de ubicación de CEP UNAM
+        mMap.addMarker(new MarkerOptions().position(cep).title("Coordinación de Estudios de Posgrado").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
         float zoomlevel = 16;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cep, zoomlevel));
     }

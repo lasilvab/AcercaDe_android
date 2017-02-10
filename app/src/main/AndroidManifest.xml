@@ -49,10 +49,6 @@
 
         </activity>
 
-        <activity android:name=".AcerdaDe">
-
-        </activity>
-
         <activity android:name=".MapsActivity">
 
         </activity>
