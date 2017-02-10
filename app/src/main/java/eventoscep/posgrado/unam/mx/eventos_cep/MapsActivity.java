@@ -68,7 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
          * it inside the SupportMapFragment. This method will only be triggered once the user has
          * installed Google Play services and returned to the app.
          */
-        
+
         // Add a marker in Sydney and move the camera
         /*
         LatLng sydney = new LatLng(-34, 151);

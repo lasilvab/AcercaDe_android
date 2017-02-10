@@ -45,6 +45,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".AcercaDe">
+
+        </activity>
+
         <activity android:name=".AcerdaDe">
 
         </activity>
