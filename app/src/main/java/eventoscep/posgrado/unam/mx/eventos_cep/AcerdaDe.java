@@ -4,16 +4,20 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+
 
 /**
  * Created by Luis Alfredo on 07/02/2017.
  */
 
-public class AcerdaDe extends AppCompatActivity implements View.OnClickListener{
+public class AcerdaDe extends AppCompatActivity implements View.OnClickListener {
+
     private TextView twitter;
     private TextView facebook;
     private ImageView twitter_logo;
@@ -25,6 +29,7 @@ public class AcerdaDe extends AppCompatActivity implements View.OnClickListener{
     private String url_twitter = "https://twitter.com/cepunam";
     private String url_facebook = "https://www.facebook.com/UNAMPosgrado";
     private String url_cep = "http://www.posgrado.unam.mx";
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +49,12 @@ public class AcerdaDe extends AppCompatActivity implements View.OnClickListener{
         facebook_logo.setOnClickListener(this);
         cep.setOnClickListener(this);
 
-
     }
 
     @Override
     public void onClick(View view) {
 
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.twitter:
                 direccion_url = url_twitter;
                 iraWeb(direccion_url);
@@ -77,9 +81,10 @@ public class AcerdaDe extends AppCompatActivity implements View.OnClickListener{
 
     }
 
-    public void iraWeb(String d){
-        Uri uri=Uri.parse(d);
-        Intent intentNav = new Intent(Intent.ACTION_VIEW,uri);
+    public void iraWeb(String d) {
+        Uri uri = Uri.parse(d);
+        Intent intentNav = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intentNav);
     }
+
 }

@@ -14,7 +14,7 @@
 
     <ImageView
         android:id="@+id/image_cep"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginLeft="60dp"
@@ -24,7 +24,7 @@
 
     <TextView
         android:id="@+id/coordinator1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -42,7 +42,7 @@
         android:text="@string/coordinator" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
 
     <TextView
         android:id="@+id/ubication"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -97,10 +97,16 @@
         android:text="Ubicación" />
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/mapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
 
 
     </LinearLayout>
