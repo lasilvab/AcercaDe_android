@@ -50,8 +50,8 @@
 
         <ImageView
             android:id="@+id/twitter_logo"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginRight="10dp"
             android:background="@mipmap/twitter" />
 
@@ -72,8 +72,8 @@
 
         <ImageView
             android:id="@+id/facebook_logo"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginRight="10dp"
             android:background="@mipmap/facebook" />
 
@@ -97,7 +97,6 @@
         android:text="Ubicación" />
 
     <LinearLayout
-        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
